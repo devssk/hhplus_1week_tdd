@@ -30,4 +30,23 @@ public class PointService {
         return saveUserPoint;
     }
 
+    public UserPoint use(long id, long amount) {
+        validation.validUserId(id);
+        validation.validAmount(amount);
+
+        UserPoint findUserPoint = userPointRepository.selectById(id);
+
+        validation.validUsePoint(findUserPoint.point(), amount);
+
+        long updatePoint = findUserPoint.point() - amount;
+
+        UserPoint updateUserPoint = userPointRepository.insertOrUpdate(id, updatePoint);
+
+        long updatedMillis = updateUserPoint.updateMillis();
+
+        pointHistoryRepository.insert(id, amount, TransactionType.USE, updatedMillis);
+
+        return updateUserPoint;
+    }
+
 }
