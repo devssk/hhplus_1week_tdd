@@ -11,6 +11,9 @@ import java.util.concurrent.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/*
+* 동시성 통합 테스트 작성
+* */
 @SpringBootTest
 class ConcurrentTest {
 

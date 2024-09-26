@@ -31,6 +31,9 @@ class UseTest {
     @Mock
     PointServiceLock pointServiceLock;
 
+    /*
+    * 정상 사용 시 결과 값이 반환 되는지 확인
+    * */
     @Test
     @DisplayName("정상 사용 건")
     void useTest01() {

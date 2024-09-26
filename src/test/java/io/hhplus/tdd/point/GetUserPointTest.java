@@ -26,6 +26,10 @@ class GetUserPointTest {
     @Mock
     PointServiceValidation pointServiceValidation;
 
+    /*
+    * 정상 조회 시 결과가 반환되고 반환된 값들 검증
+    * 조회에 대한 테스트는 굳이 안해도 될 것 같다.
+    * */
     @Test
     @DisplayName("정상 조회 건")
     void getUserPointTest01() {

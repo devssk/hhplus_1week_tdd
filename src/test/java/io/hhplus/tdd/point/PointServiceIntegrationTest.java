@@ -8,6 +8,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+* 통합 테스트를 진행하여 실제 포인트가 충전, 사용되는것에 대한 검증
+* */
 @SpringBootTest
 class PointServiceIntegrationTest {
 

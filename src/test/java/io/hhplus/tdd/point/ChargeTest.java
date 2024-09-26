@@ -31,6 +31,9 @@ class ChargeTest {
     @Mock
     PointServiceLock pointServiceLock;
 
+    /*
+    * 정상 충전 시 결과 값이 반환 되는지 확인
+    * */
     @Test
     @DisplayName("정상 충전")
     void chargeTest01() {
