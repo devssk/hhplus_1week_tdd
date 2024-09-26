@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PointSerivceValidationTest {
+class PointServiceValidationTest {
 
-    PointSerivceValidation validation;
+    PointServiceValidation validation;
 
     @BeforeEach
     void setUp() {
-        validation = new PointSerivceValidation();
+        validation = new PointServiceValidation();
     }
 
     @Test

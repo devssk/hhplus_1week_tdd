@@ -3,7 +3,7 @@ package io.hhplus.tdd.point;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PointSerivceValidation {
+public class PointServiceValidation {
 
     public void validUserId(long id) {
         if (id <= 0) {
