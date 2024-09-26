@@ -49,4 +49,10 @@ public class PointService {
         return updateUserPoint;
     }
 
+    public UserPoint getUserPoint(long id) {
+        validation.validUserId(id);
+
+        return userPointRepository.selectById(id);
+    }
+
 }
