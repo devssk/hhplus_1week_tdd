@@ -3,6 +3,8 @@ package io.hhplus.tdd.point;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class PointService {
@@ -53,6 +55,12 @@ public class PointService {
         validation.validUserId(id);
 
         return userPointRepository.selectById(id);
+    }
+
+    public List<PointHistory> getPointHistoryList(long id) {
+        validation.validUserId(id);
+
+        return pointHistoryRepository.selectAllByUserId(id);
     }
 
 }
